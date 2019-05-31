@@ -1,0 +1,230 @@
+/*I have included over 200 images. So i can't reference them all. But i have taken them from google. Thanks for considering this.*/
+
+header h1{
+    margin-top: 0;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin: 0;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    background-image: url(Background%20Images/300.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+header h1 a{
+    text-decoration: none;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-size: 1.1em;
+}
+
+header h1 a:hover{
+    font-size: 1.2em;
+}
+
+body{
+    background-image: url("Background%20Images/Wiki-background1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: aliceblue;
+    color: black;
+    font-size: 1.5em;
+    text-align: justify;
+    margin: 0;
+    bottom:5%;
+}
+
+h2{
+    margin-left: 1%;
+    font-family: 'Khula', sans-serif;
+}
+
+main ol{
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#wrap{
+    width: 66.5%;
+    margin: 0 auto;
+    padding-left: 0.7%;
+}
+
+main p{
+    display: none;
+
+
+}
+main li:hover{
+    background-color: white;
+    font-size: 1.1em;
+    transition: all 0.1s ease-in-out;
+    animation-name: bac-color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    overflow: auto;
+    padding-top: 0.6%;
+    box-shadow: 4px 4px 10px black;
+    margin-left: 0;
+}
+main li img{
+    display: none;
+    padding: 2% 2% 2% 1%;
+}
+
+main li:hover p{
+    display: block;
+    margin-right: 5%;
+    margin-left: 16.7%;
+    margin-bottom: 0.3%;
+    margin-top: 0.3%;
+    padding-top: 0.5%;
+}
+
+main li:hover img{
+    display: inline;
+    float: left;
+}
+
+nav ul:first-child{
+    border-top: 4px solid white;
+    padding-top: 1.5%;
+}
+
+nav ul{
+    padding-left: 0;
+    margin: 0;
+    padding-bottom: 1.5%;
+}
+
+nav ul:last-child{
+    margin-bottom: 5%;
+    border-bottom: 4px solid white;
+}
+
+nav ul li:first-child{
+    margin-left: 2%;
+}
+
+nav ul li:last-child{
+    margin-right: 0 ;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 10%;
+    font-size: 1em;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+nav li:hover{
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+main li{
+    list-style: none;
+    margin-left: 1%;
+}
+
+
+@keyframes example {
+    0%   {color: #ff0000;}
+    50%  {color: #00faff;}
+    100%  {color: #fffa00;}
+}
+
+@keyframes bac-color {
+    0%   {background-color:white}
+    33%  {background-color:lightgray}
+    66%  {background-color: #c3c5c9}
+    100% {background-color: #e8e8ea}
+}
+
+
+@media screen and (max-width:1120px)
+{
+    body{
+        background-size:contain;
+        background-color: #A9AEB2;
+        font-size: 1.2em;
+    }
+    
+    main li:hover img{
+        display: inline;
+        float: left;
+        width: 20%;
+    }
+    
+    main li:hover p{
+        margin-right: 5%;
+        margin-left: 22.7%;
+        margin-bottom: 0.3%;
+        margin-top: 0.3%;
+        padding-top: 0.5%;
+    }
+    
+    main li:hover{
+        font-size: 100%;  
+    }
+    
+    nav ul{
+        padding-bottom: 3%;
+    }
+    
+    nav ul li:first-child{
+        margin-left: 0;
+    }
+    
+    nav li{
+        margin-right: 5%;
+        font-size: 0.95em;
+    }
+}
+
+
+@media screen and (max-width:700px)
+{
+    body{
+        background-image: none;
+    }
+    
+    #wrap{
+        width: 100%;
+    }
+    
+    nav li{
+        margin-right: 5%;
+        font-size: 0.85em;
+    }
+    
+    main li:hover img{
+        display: none;
+    }
+    
+    main li:hover p{
+        margin-right: 5%;
+        margin-left: 0;
+        margin-bottom: 0.3%;
+        margin-top: 0.3%;
+        padding-top: 0.5%;
+    }
+    
+     main li:hover{
+        font-size: 100%;
+        padding-left: 2%;
+    }
+}
